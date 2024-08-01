@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <div class="header">
+          <div class="header-logo">
+            <img src="images/common/logo.png" alt="Company Logo" />
+          </div>
+          <nav class="nav-menu">
+            <li><a href="new-product.html">Add New Product</a></li>
+            <!--<li>
+              <a href="cart.html"
+                ><img src="images/common/cart.svg" alt="Cart"
+              /></a>-->
+            </li>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="products-section">
+        <div class="container">
+          <div class="products">
+            <div class="products__filter-part">
+              <fieldset class="filter-fieldset products-sort">
+                <div class="products-sort-main">
+                  <label for="sort" class="select-label">Sort by:</label>
+                  <select class="select-product" name="sort" id="sort">
+                    <option value="releaseDate" selected>Release Date</option>
+                    <option value="price">Price</option>
+                    <option value="rating">Rating</option>
+                  </select>
+                </div>
+                <div class="products-sort-order">
+                  <button class="sort-order-button sort-up"><img src="/images/common/arrow-sort.svg" width="9" height="9" alt="" class=""></button>
+                  <button class="sort-order-button sort-down"><img src="/images/common/arrow-sort.svg" width="9" height="9" alt="" class=""></button>
+                </div>
+                
+              </fieldset>
+
+              <fieldset class="filter-fieldset filter-genre">
+                <legend class="filter-fieldset__legend">Genre:</legend>
+                <div class="filter-fieldset__wrapper">
+                  <!-- Render Genres -->
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-fieldset filter-platform">
+                <legend class="filter-fieldset__legend">Platforms:</legend>
+                <div class="filter-fieldset__wrapper">
+                  <!-- Render Platforms -->
+                </div>
+                
+              </fieldset>
+
+              <fieldset class="filter-fieldset filter-year">
+                <legend class="filter-fieldset__legend">Year:</legend>
+                <div class="filter-fieldset__wrapper">
+                  <!-- Render Platforms -->
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-fieldset filter-multiplayer">
+                <legend class="filter-fieldset__legend">Multiplayer:</legend>
+                <div class="filter-fieldset__item">
+                  <input
+                    type="checkbox"
+                    id="yes-multiplayer"
+                    value="true"
+                    name="multiplayer"
+                    class="filter-fieldset__checkbox"
+                  />
+                  <label for="yes-multiplayer" class="filter-fieldset__label"
+                    >Yes</label
+                  >
+                </div>
+                <div class="filter-fieldset__item">
+                  <input
+                    type="checkbox"
+                    id="no-multiplayer"
+                    value="false"
+                    name="multiplayer"
+                    class="filter-fieldset__checkbox"
+                  />
+                  <label for="no-multiplayer" class="filter-fieldset__label"
+                    >No</label
+                  >
+                </div>
+              </fieldset>
+
+              <fieldset class="filter-fieldset filter-price">
+                <legend class="filter-fieldset__legend">Price:</legend>
+                <div class="price-wrapper">
+                  <div class="filter-price-left">
+                    <p class="price-descr">Min:</p>
+                    <input
+                    type="number"
+                    min="0"
+                    class="min-price"
+                    placeholder="0"
+                  />
+                  </div>
+                  <div class="filter-price-right">
+                    <p class="price-descr">Max:</p>
+                    <input
+                    type="number"
+                    class="max-price"
+                  />
+                  </div>
+                </div>
+                
+              </fieldset>
+              <fieldset class="filter-fieldset clear-button">
+                <button class="clear-fitlers">Clear All</button>
+              </fieldset>
+            </div>
+            <div class="products__list-part">
+
+                
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer"></footer>
+  </body>
+</html>
