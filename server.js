@@ -13,14 +13,7 @@ const app = express();
 app.use(cors());
 
 app.get("/", (req, res) => {
-  fs.readFile(
-    __dirname + "/api/" + "products.json",
-    "utf8",
-    function (err, data) {
-      res.setHeader("Content-Type", "application/json");
-      res.end(data);
-    }
-  );
+  res.sendFile(__dirname+'/index.html');
 });
 
 app.get("/product-filters", (req, res) => {
