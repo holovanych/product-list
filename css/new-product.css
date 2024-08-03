@@ -52,3 +52,10 @@
 .field-mult-wrapper{
     display: grid;
 }
+
+.page-title{
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 30px;
+}
