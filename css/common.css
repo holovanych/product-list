@@ -1,0 +1,49 @@
+body{
+    font-family: "Ubuntu", sans-serif;
+    background-color: #131730;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.button{
+    padding: 20px 40px;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: chartreuse;
+}
+
+.container{
+    max-width: 1600px;
+    margin: auto;
+}
+
+@media (max-width: 1919px) {
+    .container {
+        max-width: calc(1600px + (1600 - 1200) * (100vw - 1920px) / (1920 - 1366));
+    }
+}
+
+@media (max-width: 1366px) {
+    .container {
+        max-width: calc(1200px + (1200 - 280) * (100vw - 1366px) / (1366 - 320));
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 280px;
+    }
+}

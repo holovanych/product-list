@@ -4,22 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product List</title>
-    <script type="module" src="index.js"></script>
+    <link href="css/main.css" rel="stylesheet" />
   </head>
   <body>
     <header id="main-header">
       <div class="container">
         <div class="header">
           <div class="header-logo">
-            <img src="images/common/logo.png" alt="Company Logo" />
+            <a href="index.html">
+              <img src="images/common/logo.svg" alt="Company Logo" />
+            </a>
           </div>
           <nav class="nav-menu">
-            <li><a href="new-product.html">Add New Product</a></li>
-            <!--<li>
-              <a href="cart.html"
-                ><img src="images/common/cart.svg" alt="Cart"
-              /></a>-->
-            </li>
+            <a href="new-product.html" class="nav-link">Add New Product</a>
           </nav>
         </div>
       </div>
@@ -32,7 +29,7 @@
             <div class="products__filter-part">
               <fieldset class="filter-fieldset products-sort">
                 <div class="products-sort-main">
-                  <label for="sort" class="select-label">Sort by:</label>
+                  <label for="sort" class="filter-fieldset__legend select-label">Sort by:</label>
                   <select class="select-product" name="sort" id="sort">
                     <option value="releaseDate" selected>Release Date</option>
                     <option value="price">Price</option>
@@ -40,8 +37,8 @@
                   </select>
                 </div>
                 <div class="products-sort-order">
-                  <button class="sort-order-button sort-up"><img src="/images/common/arrow-sort.svg" width="9" height="9" alt="" class=""></button>
-                  <button class="sort-order-button sort-down"><img src="/images/common/arrow-sort.svg" width="9" height="9" alt="" class=""></button>
+                  <button class="sort-order-button sort-asc" data-sort-order="ASC"><img src="/images/common/arrow-sort.svg" width="9" height="9" alt="" class=""></button>
+                  <button class="sort-order-button sort-desc" data-sort-order="DESC"><img src="/images/common/arrow-sort.svg" width="9" height="9" alt="" class=""></button>
                 </div>
                 
               </fieldset>
@@ -70,30 +67,33 @@
 
               <fieldset class="filter-fieldset filter-multiplayer">
                 <legend class="filter-fieldset__legend">Multiplayer:</legend>
-                <div class="filter-fieldset__item">
-                  <input
-                    type="checkbox"
-                    id="yes-multiplayer"
-                    value="true"
-                    name="multiplayer"
-                    class="filter-fieldset__checkbox"
-                  />
-                  <label for="yes-multiplayer" class="filter-fieldset__label"
-                    >Yes</label
-                  >
+                <div class="filter-fieldset__wrapper">
+                  <div class="filter-fieldset__item">
+                    <input
+                      type="checkbox"
+                      id="yes-multiplayer"
+                      value="true"
+                      name="multiplayer"
+                      class="filter-fieldset__checkbox"
+                    />
+                    <label for="yes-multiplayer" class="filter-fieldset__label"
+                      >Yes</label
+                    >
+                  </div>
+                  <div class="filter-fieldset__item">
+                    <input
+                      type="checkbox"
+                      id="no-multiplayer"
+                      value="false"
+                      name="multiplayer"
+                      class="filter-fieldset__checkbox"
+                    />
+                    <label for="no-multiplayer" class="filter-fieldset__label"
+                      >No</label
+                    >
+                  </div>
                 </div>
-                <div class="filter-fieldset__item">
-                  <input
-                    type="checkbox"
-                    id="no-multiplayer"
-                    value="false"
-                    name="multiplayer"
-                    class="filter-fieldset__checkbox"
-                  />
-                  <label for="no-multiplayer" class="filter-fieldset__label"
-                    >No</label
-                  >
-                </div>
+                
               </fieldset>
 
               <fieldset class="filter-fieldset filter-price">
@@ -119,18 +119,25 @@
                 
               </fieldset>
               <fieldset class="filter-fieldset clear-button">
-                <button class="clear-fitlers">Clear All</button>
+                <button class="clear-fitlers button">Clear All</button>
               </fieldset>
             </div>
             <div class="products__list-part">
-
-                
+                <!-- Render Products -->
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="main-footer"></footer>
+    <footer class="main-footer">
+        <div class="container">
+          <div class="footer"> 
+            <p class="copyright">@ Shoppe. 2024 All rights reserved.</p>
+            <p class="author">Made by <a href="https://github.com/holovanych" target="_blank" class="author-link">Taras Holovanych</a></p>
+          </div>
+        </div>
+    </footer>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

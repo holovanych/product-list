@@ -6,7 +6,14 @@
     "price": 19.99,
     "releaseDate": "23 June 2015",
     "gameCoverImage": "images/products/batman-arkham-knight.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One", "Nintendo Switch"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
     "description": "Batman: Arkham Knight is the epic conclusion to the Arkham series. In this game, Batman faces the ultimate threat to the city he has sworn to protect. The Scarecrow returns and unites Gotham's most dangerous villains in a plan to destroy Batman. Players can explore Gotham City and utilize the Batmobile for the first time in the series. With an engaging story and action-packed gameplay, the game offers an immersive experience for fans of the Dark Knight.",
     "multiplayer": false,
     "rating": 4.5
@@ -18,7 +25,13 @@
     "price": 59.99,
     "releaseDate": "28 October 2022",
     "gameCoverImage": "images/products/COD-mw-2.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Call of Duty: Modern Warfare II is a highly anticipated sequel in the iconic first-person shooter series. Players step into the shoes of elite soldiers and engage in intense missions around the globe. The game features a gripping campaign, dynamic multiplayer modes, and the return of Special Ops missions. With enhanced graphics and realistic gameplay mechanics, Modern Warfare II offers a thrilling experience for fans of the genre.",
     "multiplayer": true,
     "rating": 4.3
@@ -30,10 +43,16 @@
     "price": 49.99,
     "releaseDate": "13 November 2020",
     "gameCoverImage": "images/products/cold-of-duty-cold-war.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Call of Duty: Black Ops Cold War drops players into the volatile geopolitical battle of the Cold War's early 1980s. The game features a gripping single-player campaign, iconic multiplayer experiences, and the beloved Zombies mode. Players engage in espionage, undercover operations, and combat across iconic locations. With immersive storytelling and action-packed gameplay, Cold War delivers a thrilling experience.",
     "multiplayer": true,
-    "rating": 4.0
+    "rating": 4
   },
   {
     "id": 4,
@@ -42,7 +61,13 @@
     "price": 29.99,
     "releaseDate": "10 December 2020",
     "gameCoverImage": "images/products/cyberpunk-2077.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Cyberpunk 2077 is an open-world action RPG set in the vibrant and dangerous metropolis of Night City. Players assume the role of V, a mercenary seeking immortality. The game offers a deep narrative, a vast world to explore, and numerous choices that affect the storyline. With a rich character customization system and a variety of weapons and cybernetic enhancements, Cyberpunk 2077 provides a unique gaming experience.",
     "multiplayer": false,
     "rating": 3.8
@@ -54,7 +79,14 @@
     "price": 19.99,
     "releaseDate": "22 September 2011",
     "gameCoverImage": "images/products/dark-souls.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One", "Nintendo Switch"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
     "description": "Dark Souls is a challenging action RPG known for its complex lore and unforgiving difficulty. Set in a dark, atmospheric world filled with hostile creatures, players must overcome numerous obstacles and powerful bosses. The game features deep character customization, a variety of weapons and magic, and a unique multiplayer system. Dark Souls is celebrated for its intricate level design and deep combat mechanics.",
     "multiplayer": true,
     "rating": 4.7
@@ -66,7 +98,9 @@
     "price": 69.99,
     "releaseDate": "12 November 2020",
     "gameCoverImage": "images/products/demons-souls.png",
-    "platforms": ["PS5"],
+    "platforms": [
+      "PS5"
+    ],
     "description": "Demon's Souls is a remake of the classic action RPG that started the 'Souls-like' genre. Players enter the treacherous land of Boletaria and face formidable foes, deadly traps, and intense combat scenarios. The game features stunning visuals, revamped gameplay mechanics, and a haunting atmosphere. With deep character customization and strategic combat, Demon's Souls offers a rewarding and challenging experience.",
     "multiplayer": true,
     "rating": 4.6
@@ -78,7 +112,13 @@
     "price": 59.99,
     "releaseDate": "6 June 2023",
     "gameCoverImage": "images/products/diablo-4.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Diablo IV is the latest installment in the acclaimed action RPG series. Players return to the dark and gothic world of Sanctuary, battling against demonic forces. The game features an expansive open world, deep character customization, and a variety of classes. With a blend of solo and cooperative gameplay, Diablo IV offers a rich and immersive experience for both new and returning players.",
     "multiplayer": true,
     "rating": 4.4
@@ -90,7 +130,13 @@
     "price": 49.99,
     "releaseDate": "30 September 2024",
     "gameCoverImage": "images/products/elden-ring-shadow-erdtree.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Elden Ring: Shadow of the Erdtree is an expansion for the critically acclaimed action RPG Elden Ring. Players explore new areas, face challenging enemies, and uncover more lore about the Lands Between. The expansion offers new quests, weapons, and spells, providing a fresh experience for fans of the base game. With a richly detailed world and deep gameplay mechanics, Elden Ring continues to captivate players.",
     "multiplayer": true,
     "rating": 4.8
@@ -102,7 +148,13 @@
     "price": 59.99,
     "releaseDate": "25 February 2022",
     "gameCoverImage": "images/products/elder-ring.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Elden Ring is an action RPG developed by FromSoftware and published by Bandai Namco. Set in a vast open world known as the Lands Between, players explore diverse landscapes, battle formidable foes, and unravel the mysteries of the Elden Ring. The game features deep combat mechanics, rich lore, and a wide variety of weapons and magic. With a blend of exploration and intense combat, Elden Ring offers a challenging and immersive experience.",
     "multiplayer": true,
     "rating": 4.9
@@ -114,7 +166,14 @@
     "price": 29.99,
     "releaseDate": "1 October 2021",
     "gameCoverImage": "images/products/fifa-22.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One", "Nintendo Switch"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
     "description": "FIFA 22 is a football simulation game that offers an authentic and immersive experience. Players can build and manage their teams in Career Mode, compete in online multiplayer matches, and experience the excitement of real-world football leagues. The game features realistic player movements, improved graphics, and a variety of gameplay modes. FIFA 22 provides a comprehensive football experience for fans of the sport.",
     "multiplayer": true,
     "rating": 4.2
@@ -126,7 +185,13 @@
     "price": 69.99,
     "releaseDate": "29 September 2023",
     "gameCoverImage": "images/products/fifa-24.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "FIFA 24 continues the legacy of the popular football simulation series. With updated rosters, improved graphics, and refined gameplay mechanics, FIFA 24 offers an immersive football experience. Players can enjoy a variety of modes, including Career Mode, Ultimate Team, and online multiplayer. With a focus on authenticity, FIFA 24 delivers a top-notch football experience.",
     "multiplayer": true,
     "rating": 4.3
@@ -138,7 +203,9 @@
     "price": 69.99,
     "releaseDate": "22 June 2023",
     "gameCoverImage": "images/products/final-fantasy-16.png",
-    "platforms": ["PS5"],
+    "platforms": [
+      "PS5"
+    ],
     "description": "Final Fantasy XVI is the latest entry in the long-running Final Fantasy series. Set in the world of Valisthea, players follow the journey of Clive Rosfield as he seeks revenge and redemption. The game features a deep and emotional story, fast-paced combat, and stunning visuals. With a mix of traditional RPG elements and modern gameplay mechanics, Final Fantasy XVI offers an epic experience for fans of the series.",
     "multiplayer": false,
     "rating": 4.7
@@ -150,7 +217,10 @@
     "price": 59.99,
     "releaseDate": "17 July 2020",
     "gameCoverImage": "images/products/ghost-of-tsushima.png",
-    "platforms": ["PS5", "PS4"],
+    "platforms": [
+      "PS5",
+      "PS4"
+    ],
     "description": "Ghost of Tsushima is an open-world action-adventure game set in feudal Japan. Players take on the role of Jin Sakai, a samurai warrior who must protect his homeland from Mongol invaders. The game features a beautiful and immersive world, fluid combat mechanics, and a compelling story. Players can explore the island of Tsushima, engage in sword fights, and master the art of stealth. With its stunning visuals and rich gameplay, Ghost of Tsushima is a must-play.",
     "multiplayer": true,
     "rating": 4.6
@@ -162,7 +232,11 @@
     "price": 19.99,
     "releaseDate": "20 April 2018",
     "gameCoverImage": "images/products/god-of-war.png",
-    "platforms": ["PC", "PS5", "PS4"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4"
+    ],
     "description": "God of War is an action-adventure game that follows the journey of Kratos and his son Atreus. Set in the world of Norse mythology, the game features a deep and emotional story, stunning visuals, and intense combat. Players explore vast landscapes, solve puzzles, and battle mythological creatures. With its compelling narrative and immersive gameplay, God of War is a standout title in the action-adventure genre.",
     "multiplayer": false,
     "rating": 4.9
@@ -174,7 +248,10 @@
     "price": 69.99,
     "releaseDate": "9 November 2022",
     "gameCoverImage": "images/products/god-of-war-ragnarok.png",
-    "platforms": ["PS5", "PS4"],
+    "platforms": [
+      "PS5",
+      "PS4"
+    ],
     "description": "God of War: Ragnarök is the sequel to the critically acclaimed God of War. The game continues the story of Kratos and Atreus as they navigate the realms of Norse mythology. Players face new challenges, explore stunning environments, and encounter powerful gods and creatures. With its gripping narrative, breathtaking visuals, and refined combat mechanics, Ragnarök delivers an unforgettable experience.",
     "multiplayer": false,
     "rating": 4.8
@@ -186,7 +263,9 @@
     "price": 29.99,
     "releaseDate": "17 October 2017",
     "gameCoverImage": "images/products/gran-turismo.png",
-    "platforms": ["PS4"],
+    "platforms": [
+      "PS4"
+    ],
     "description": "Gran Turismo Sport is a racing game featuring a wide variety of cars and tracks. Players can compete in online races, complete challenges, and enjoy realistic driving mechanics. The game offers a deep and immersive racing experience.",
     "multiplayer": true,
     "rating": 4.2
@@ -198,10 +277,16 @@
     "price": 59.99,
     "releaseDate": "25 February 2022",
     "gameCoverImage": "images/products/grid-legends.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Grid Legends is a racing game that combines thrilling on-track action with a compelling narrative. Players can race in various locations worldwide and experience a wide range of cars and tracks. The game features a story mode and multiplayer options.",
     "multiplayer": true,
-    "rating": 4.0
+    "rating": 4
   },
   {
     "id": 18,
@@ -210,7 +295,13 @@
     "price": 29.99,
     "releaseDate": "17 September 2013",
     "gameCoverImage": "images/products/GTA-5.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Grand Theft Auto V is an open-world action-adventure game set in the fictional state of San Andreas. Players can explore the vast world, engage in various activities, and complete missions. The game features a deep narrative and extensive multiplayer options.",
     "multiplayer": true,
     "rating": 4.8
@@ -222,7 +313,13 @@
     "price": 59.99,
     "releaseDate": "26 October 2021",
     "gameCoverImage": "images/products/guardians-of-the-galaxy.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Marvel's Guardians of the Galaxy is an action-adventure game where players control Star-Lord and lead the Guardians in a quest to save the galaxy. The game features a rich narrative, engaging combat, and stunning visuals.",
     "multiplayer": false,
     "rating": 4.4
@@ -234,7 +331,13 @@
     "price": 59.99,
     "releaseDate": "20 January 2021",
     "gameCoverImage": "images/products/hitman-3.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Hitman 3 is a stealth game where players take on the role of Agent 47, a professional assassin. The game features a variety of missions set in detailed locations worldwide. Players must use stealth, strategy, and creativity to eliminate targets.",
     "multiplayer": false,
     "rating": 4.5
@@ -246,7 +349,13 @@
     "price": 69.99,
     "releaseDate": "10 February 2023",
     "gameCoverImage": "images/products/hogwarts-legacy.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Hogwarts Legacy is an action RPG set in the Harry Potter universe. Players can explore Hogwarts School of Witchcraft and Wizardry, learn spells, and uncover secrets. The game offers an immersive experience with a rich narrative and detailed world.",
     "multiplayer": false,
     "rating": 4.6
@@ -258,7 +367,10 @@
     "price": 69.99,
     "releaseDate": "18 February 2022",
     "gameCoverImage": "images/products/horizon-forbidden-west.png",
-    "platforms": ["PS5", "PS4"],
+    "platforms": [
+      "PS5",
+      "PS4"
+    ],
     "description": "Horizon Forbidden West is an action RPG set in a post-apocalyptic world. Players control Aloy as she explores new regions, fights robotic creatures, and uncovers mysteries. The game features stunning visuals, engaging combat, and a deep story.",
     "multiplayer": false,
     "rating": 4.7
@@ -270,7 +382,11 @@
     "price": 49.99,
     "releaseDate": "28 February 2017",
     "gameCoverImage": "images/products/horizon-zero-dawn.png",
-    "platforms": ["PC", "PS5", "PS4"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4"
+    ],
     "description": "Horizon Zero Dawn is an action RPG where players control Aloy, a hunter in a world overrun by robotic creatures. The game features an expansive open world, dynamic combat, and a compelling story. Players can explore, craft, and uncover the secrets of the past.",
     "multiplayer": false,
     "rating": 4.6
@@ -282,7 +398,13 @@
     "price": 39.99,
     "releaseDate": "26 March 2021",
     "gameCoverImage": "images/products/it-takes-two.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "It Takes Two is a cooperative platformer where players control Cody and May, a couple turned into dolls. The game features unique gameplay mechanics, puzzles, and a heartfelt story. Players must work together to navigate various levels and overcome obstacles.",
     "multiplayer": true,
     "rating": 4.8
@@ -294,7 +416,13 @@
     "price": 59.99,
     "releaseDate": "25 September 2020",
     "gameCoverImage": "images/products/mafia.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Mafia: Trilogy includes remastered versions of Mafia, Mafia II, and Mafia III. Players can experience the crime-filled stories of the Mafia series with enhanced graphics and gameplay. The trilogy offers an immersive experience with engaging narratives and action-packed gameplay.",
     "multiplayer": false,
     "rating": 4.2
@@ -306,7 +434,13 @@
     "price": 39.99,
     "releaseDate": "15 February 2019",
     "gameCoverImage": "images/products/metro-exodus.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Metro Exodus is a first-person shooter set in a post-apocalyptic world. Players embark on a journey through Russia's wastelands, fighting mutants and hostile humans. The game features a gripping narrative, immersive environments, and intense combat.",
     "multiplayer": false,
     "rating": 4.4
@@ -318,7 +452,15 @@
     "price": 26.95,
     "releaseDate": "18 November 2011",
     "gameCoverImage": "images/products/minecraft.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One", "Nintendo Switch", "Mobile"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One",
+      "Nintendo Switch",
+      "Mobile"
+    ],
     "description": "Minecraft is a sandbox game that allows players to build and explore virtual worlds made up of blocks. The game features a variety of modes, including Survival and Creative, and offers endless possibilities for creativity and adventure. Players can mine resources, craft items, and build structures.",
     "multiplayer": true,
     "rating": 4.9
@@ -330,7 +472,13 @@
     "price": 69.99,
     "releaseDate": "10 November 2023",
     "gameCoverImage": "images/products/modern-warfare-3-COD.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Call of Duty: Modern Warfare III is a first-person shooter that continues the story of the Modern Warfare series. Players engage in intense missions, multiplayer battles, and Special Ops missions. The game features realistic graphics, dynamic gameplay, and a compelling narrative.",
     "multiplayer": true,
     "rating": 4.5
@@ -342,7 +490,13 @@
     "price": 19.99,
     "releaseDate": "19 April 2011",
     "gameCoverImage": "images/products/mortal-kombat-1.png",
-    "platforms": ["PC", "PS4", "PS3", "Xbox One", "Xbox 360"],
+    "platforms": [
+      "PC",
+      "PS4",
+      "PS3",
+      "Xbox One",
+      "Xbox 360"
+    ],
     "description": "Mortal Kombat is a fighting game that revitalizes the classic franchise with intense action and brutal combat. Players choose from a roster of iconic characters, each with unique abilities and fatalities. The game features a compelling story mode, multiplayer battles, and the classic arcade experience.",
     "multiplayer": true,
     "rating": 4.5
@@ -354,7 +508,14 @@
     "price": 49.99,
     "releaseDate": "23 April 2019",
     "gameCoverImage": "images/products/mortal-kombat-11.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One", "Nintendo Switch"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
     "description": "Mortal Kombat 11 is the latest installment in the acclaimed fighting series. The game features a new cinematic story mode, enhanced graphics, and refined gameplay mechanics. Players can customize their fighters with unique skins, gear, and abilities. With a robust online multiplayer mode, Mortal Kombat 11 offers intense and competitive battles.",
     "multiplayer": true,
     "rating": 4.7
@@ -366,10 +527,14 @@
     "price": 19.99,
     "releaseDate": "10 November 2017",
     "gameCoverImage": "images/products/need-for-speed-payback.png",
-    "platforms": ["PC", "PS4", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS4",
+      "Xbox One"
+    ],
     "description": "Need for Speed: Payback is an action-driving fantasy game. The game offers a deep customization system, a diverse open world, and thrilling narrative-driven missions. Players can drive a wide range of cars, participate in heist missions, and engage in high-stakes races and pursuits.",
     "multiplayer": true,
-    "rating": 4.0
+    "rating": 4
   },
   {
     "id": 32,
@@ -378,7 +543,11 @@
     "price": 59.99,
     "releaseDate": "2 December 2022",
     "gameCoverImage": "images/products/nfs-unbound.png",
-    "platforms": ["PC", "PS5", "Xbox Series"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "Xbox Series"
+    ],
     "description": "Need for Speed: Unbound brings an adrenaline-pumping racing experience with stunning visuals, an expansive open world, and a dynamic weather system. Players can customize their rides, compete in intense races, and explore a vibrant city environment.",
     "multiplayer": true,
     "rating": 4.3
@@ -390,7 +559,10 @@
     "price": 39.99,
     "releaseDate": "12 April 2016",
     "gameCoverImage": "images/products/ratchet-clank.png",
-    "platforms": ["PS5", "PS4"],
+    "platforms": [
+      "PS5",
+      "PS4"
+    ],
     "description": "Ratchet & Clank is a reimagining of the original game that combines the best elements of the series with stunning visuals and a captivating story. Players join Ratchet and Clank on their quest to save the galaxy, using a wide range of gadgets and weapons.",
     "multiplayer": false,
     "rating": 4.6
@@ -402,7 +574,10 @@
     "price": 29.99,
     "releaseDate": "18 May 2010",
     "gameCoverImage": "images/products/red-dead-redemption.png",
-    "platforms": ["PS3", "Xbox 360"],
+    "platforms": [
+      "PS3",
+      "Xbox 360"
+    ],
     "description": "Red Dead Redemption is an open-world action-adventure game set in the American Old West. Players take on the role of John Marston, a former outlaw on a quest to seek redemption. The game features a vast open world, engaging story, and a variety of missions and activities.",
     "multiplayer": true,
     "rating": 4.8
@@ -414,7 +589,13 @@
     "price": 59.99,
     "releaseDate": "26 October 2018",
     "gameCoverImage": "images/products/red-dead-redemption-2.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series",
+      "Xbox One"
+    ],
     "description": "Red Dead Redemption 2 is an epic tale of life in America’s unforgiving heartland. The game features a vast open world with detailed environments, a rich narrative, and a variety of gameplay elements including hunting, fishing, and horseback riding. Players follow the story of Arthur Morgan, a member of the Van der Linde gang, as they navigate the challenges of life on the run.",
     "multiplayer": true,
     "rating": 4.9
@@ -426,7 +607,11 @@
     "price": 39.99,
     "releaseDate": "25 January 2019",
     "gameCoverImage": "images/products/resident-evil-2.png",
-    "platforms": ["PC", "PS4", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS4",
+      "Xbox One"
+    ],
     "description": "Resident Evil 2 is a survival horror game that has been remade with modern graphics and gameplay mechanics. Players control Leon S. Kennedy and Claire Redfield as they attempt to escape Raccoon City during a zombie outbreak. The game features tense exploration, puzzle-solving, and combat against horrifying enemies.",
     "multiplayer": false,
     "rating": 4.7
@@ -438,7 +623,12 @@
     "price": 59.99,
     "releaseDate": "24 March 2023",
     "gameCoverImage": "images/products/resident-evil-4.png",
-    "platforms": ["PC", "PS5", "PS4", "Xbox Series"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4",
+      "Xbox Series"
+    ],
     "description": "Resident Evil 4 is a remake of the classic survival horror game that follows Leon S. Kennedy on a mission to rescue the President's daughter. The game features overhauled graphics, modernized gameplay mechanics, and a gripping story. Players will face a variety of enemies and solve puzzles in a dark and atmospheric world.",
     "multiplayer": false,
     "rating": 4.8
@@ -450,7 +640,9 @@
     "price": 69.99,
     "releaseDate": "30 April 2021",
     "gameCoverImage": "images/products/returnal.png",
-    "platforms": ["PS5"],
+    "platforms": [
+      "PS5"
+    ],
     "description": "Returnal is a third-person roguelike shooter that follows Selene, a space explorer trapped on a hostile alien planet. Players must navigate through procedurally generated environments, battling enemies and uncovering the mystery of Selene's predicament. The game features fast-paced combat, a haunting atmosphere, and a deep narrative.",
     "multiplayer": true,
     "rating": 4.5
@@ -462,7 +654,11 @@
     "price": 29.99,
     "releaseDate": "14 September 2018",
     "gameCoverImage": "images/products/shadow-of-the-tomb-raider.png",
-    "platforms": ["PC", "PS4", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS4",
+      "Xbox One"
+    ],
     "description": "Shadow of the Tomb Raider follows Lara Croft as she ventures through the dense jungles of South America and battles against the nefarious organization, Trinity. The game features stunning visuals, challenging puzzles, and intense combat sequences. Players can explore vast tombs, uncover hidden secrets, and craft new gear.",
     "multiplayer": false,
     "rating": 4.3
@@ -474,7 +670,13 @@
     "price": 19.99,
     "releaseDate": "14 August 2012",
     "gameCoverImage": "images/products/sleeping-dogs.png",
-    "platforms": ["PC", "PS4", "PS3", "Xbox One", "Xbox 360"],
+    "platforms": [
+      "PC",
+      "PS4",
+      "PS3",
+      "Xbox One",
+      "Xbox 360"
+    ],
     "description": "Sleeping Dogs is an open-world action-adventure game set in Hong Kong. Players take on the role of Wei Shen, an undercover cop tasked with infiltrating and dismantling a dangerous Triad organization. The game features a mix of hand-to-hand combat, shooting, and driving sequences, as well as a richly detailed city to explore.",
     "multiplayer": false,
     "rating": 4.4
@@ -486,7 +688,9 @@
     "price": 69.99,
     "releaseDate": "20 October 2023",
     "gameCoverImage": "images/products/spider-man-2.png",
-    "platforms": ["PS5"],
+    "platforms": [
+      "PS5"
+    ],
     "description": "Marvel's Spider-Man 2 is the highly anticipated sequel to the critically acclaimed Spider-Man game. Players can control both Peter Parker and Miles Morales as they face new villains and explore a larger open-world New York City. The game features enhanced graphics, new abilities, and a compelling storyline.",
     "multiplayer": false,
     "rating": 4.8
@@ -498,7 +702,11 @@
     "price": 49.99,
     "releaseDate": "12 November 2020",
     "gameCoverImage": "images/products/spider-man-miles-morales.png",
-    "platforms": ["PC", "PS5", "PS4"],
+    "platforms": [
+      "PC",
+      "PS5",
+      "PS4"
+    ],
     "description": "Marvel's Spider-Man: Miles Morales follows the journey of Miles Morales as he masters his new powers and becomes his own Spider-Man. The game features a vibrant open-world, new abilities, and a heartfelt story. Players can swing through the city, combat enemies, and uncover hidden secrets.",
     "multiplayer": false,
     "rating": 4.6
@@ -510,7 +718,9 @@
     "price": 59.99,
     "releaseDate": "8 February 2024",
     "gameCoverImage": "images/products/stellar-blade.png",
-    "platforms": ["PS5"],
+    "platforms": [
+      "PS5"
+    ],
     "description": "Stellar Blade is an action RPG set in a futuristic world where players take on the role of Eve, a warrior tasked with saving humanity from an alien invasion. The game features fast-paced combat, a rich narrative, and a detailed sci-fi environment. Players can customize their character, upgrade abilities, and explore a vast world.",
     "multiplayer": false,
     "rating": 4.5
@@ -522,7 +732,11 @@
     "price": 39.99,
     "releaseDate": "2 June 2017",
     "gameCoverImage": "images/products/tekken-7.png",
-    "platforms": ["PC", "PS4", "Xbox One"],
+    "platforms": [
+      "PC",
+      "PS4",
+      "Xbox One"
+    ],
     "description": "Tekken 7 is a fighting game that features a large roster of characters, each with their unique fighting styles and abilities. The game includes a story mode, online multiplayer, and various gameplay modes. Players can engage in intense battles, perform combos, and experience a cinematic storyline.",
     "multiplayer": true,
     "rating": 4.3
@@ -534,7 +748,10 @@
     "price": 69.99,
     "releaseDate": "2 September 2022",
     "gameCoverImage": "images/products/the-last-of-us-part-1.png",
-    "platforms": ["PC", "PS5"],
+    "platforms": [
+      "PC",
+      "PS5"
+    ],
     "description": "The Last of Us Part I is a remake of the original critically acclaimed game, featuring enhanced graphics, improved gameplay mechanics, and additional content. Players follow the journey of Joel and Ellie as they navigate a post-apocalyptic world filled with dangers. The game offers a compelling story, intense combat, and emotional depth.",
     "multiplayer": false,
     "rating": 4.9
@@ -546,7 +763,9 @@
     "price": 89.99,
     "releaseDate": "19 June 2020",
     "gameCoverImage": "images/products/the-last-of-us-part-2.png",
-    "platforms": ["PS4"],
+    "platforms": [
+      "PS4"
+    ],
     "description": "The Last of Us Part II is a sequel to the critically acclaimed game, continuing the story of Ellie and Joel. Set in a post-apocalyptic world, players must navigate through dangerous environments, engage in intense combat, and experience an emotional narrative.",
     "multiplayer": false,
     "rating": 4.7
@@ -558,7 +777,13 @@
     "price": 39.99,
     "releaseDate": "10 June 2022",
     "gameCoverImage": "images/products/the-quarry.png",
-    "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S"],
+    "platforms": [
+      "PC",
+      "PS4",
+      "PS5",
+      "Xbox One",
+      "Xbox Series X/S"
+    ],
     "description": "The Quarry is a horror game where players control a group of teenagers who must survive a night filled with terrifying events. The game features branching narratives, multiple endings, and a choice-based gameplay system that impacts the story's outcome.",
     "multiplayer": true,
     "rating": 4.2
@@ -570,7 +795,14 @@
     "price": 49.99,
     "releaseDate": "19 May 2015",
     "gameCoverImage": "images/products/the-wither-3-wild-hunt.png",
-    "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Nintendo Switch"],
+    "platforms": [
+      "PC",
+      "PS4",
+      "PS5",
+      "Xbox One",
+      "Xbox Series X/S",
+      "Nintendo Switch"
+    ],
     "description": "The Witcher 3: Wild Hunt is an open-world RPG that follows Geralt of Rivia on his quest to find his adopted daughter. The game features a rich narrative, expansive world, and complex combat system. Players can engage in side quests, craft items, and make choices that affect the story.",
     "multiplayer": false,
     "rating": 4.9
@@ -582,7 +814,13 @@
     "price": 39.99,
     "releaseDate": "4 September 2020",
     "gameCoverImage": "images/products/tony-hawks-2.png",
-    "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S"],
+    "platforms": [
+      "PC",
+      "PS4",
+      "PS5",
+      "Xbox One",
+      "Xbox Series X/S"
+    ],
     "description": "Tony Hawk's Pro Skater 1+2 is a remastered collection of the first two games in the series. Players can perform tricks, complete challenges, and explore iconic levels. The game features updated graphics, improved controls, and online multiplayer.",
     "multiplayer": true,
     "rating": 4.5
@@ -594,7 +832,10 @@
     "price": 29.99,
     "releaseDate": "2 February 2018",
     "gameCoverImage": "images/products/UFC-3.png",
-    "platforms": ["PS4", "Xbox One"],
+    "platforms": [
+      "PS4",
+      "Xbox One"
+    ],
     "description": "UFC 3 is a mixed martial arts fighting game that features realistic graphics, advanced gameplay mechanics, and a large roster of fighters. Players can compete in various modes, including career, online multiplayer, and knockout mode.",
     "multiplayer": true,
     "rating": 4.1
@@ -606,7 +847,12 @@
     "price": 49.99,
     "releaseDate": "14 August 2020",
     "gameCoverImage": "images/products/ufc-4.png",
-    "platforms": ["PS4", "PS5", "Xbox One", "Xbox Series X/S"],
+    "platforms": [
+      "PS4",
+      "PS5",
+      "Xbox One",
+      "Xbox Series X/S"
+    ],
     "description": "UFC 4 is a mixed martial arts fighting game that builds upon the previous title with improved graphics, new gameplay mechanics, and a more immersive career mode. Players can customize their fighters, compete online, and experience realistic combat.",
     "multiplayer": true,
     "rating": 4.3
@@ -618,7 +864,10 @@
     "price": 59.99,
     "releaseDate": "5 November 2023",
     "gameCoverImage": "images/products/UFC-5.png",
-    "platforms": ["PS5", "Xbox Series X/S"],
+    "platforms": [
+      "PS5",
+      "Xbox Series X/S"
+    ],
     "description": "UFC 5 is the latest installment in the mixed martial arts fighting game series, offering cutting-edge graphics, refined gameplay mechanics, and a deep career mode. Players can engage in realistic fights, compete online, and create their own fighters.",
     "multiplayer": true,
     "rating": 4.4
@@ -630,9 +879,41 @@
     "price": 49.99,
     "releaseDate": "28 January 2022",
     "gameCoverImage": "images/products/uncharted.png",
-    "platforms": ["PC", "PS5"],
+    "platforms": [
+      "PC",
+      "PS5"
+    ],
     "description": "Uncharted: Legacy of Thieves Collection includes remastered versions of Uncharted 4: A Thief's End and Uncharted: The Lost Legacy. Players can experience the thrilling adventures of Nathan Drake and Chloe Frazer in stunning detail with enhanced graphics and gameplay.",
     "multiplayer": false,
     "rating": 4.8
+  },
+  {
+    "id": 54,
+    "title": "My New Game",
+    "genre": "RPG",
+    "price": 140,
+    "releaseDate": "31 August 2024",
+    "gameCoverImage": "images/products/my-new-game.png",
+    "platforms": [
+      "PC",
+      " PS4"
+    ],
+    "description": "Lorem ipsum",
+    "multiplayer": false,
+    "rating": 2.3
+  },
+  {
+    "id": 55,
+    "title": "Super Gsame 1",
+    "genre": "DolDol",
+    "price": 1111,
+    "releaseDate": "16 October 2025",
+    "gameCoverImage": "images/products/super-gsame-1.png",
+    "platforms": [
+      "PC"
+    ],
+    "description": "Lorem Ipsum",
+    "multiplayer": false,
+    "rating": 3
   }
 ]

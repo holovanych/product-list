@@ -1,0 +1,19 @@
+.main-footer{
+    background: #01020a;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.copyright,
+.author{
+    color: #FFF;
+    font-size: 14px;
+}
+
+.author .author-link{
+    color: #FFFFFF;
+}

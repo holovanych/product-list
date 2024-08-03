@@ -78,25 +78,38 @@ class ProductList {
     maxPriceInput.setAttribute("placeholder", filters.maxPrice);
     maxPriceInput.setAttribute("max", filters.maxPrice);
 
-    if(isNaN(this.pageParams.priceMax) || this.pageParams.priceMax === 0) {
+    if (isNaN(this.pageParams.priceMax) || this.pageParams.priceMax === 0) {
       this.pageParams.priceMax = filters.maxPrice;
       maxPriceInput.value = "";
     } else {
       maxPriceInput.value = this.pageParams.priceMax;
+      if (this.pageParams.priceMax === filters.maxPrice) {
+        maxPriceInput.value = "";
+      }
     }
-    
+
     minPriceInput.value = this.pageParams.priceMin || "";
 
     /* Sort By */
     document.querySelector(".products-sort .select-product").value =
       this.pageParams.sortBy;
-    console.log(this.pageParams);
+    const sortASC = document.querySelector(".sort-asc");
+    const sortDESC = document.querySelector(".sort-desc");
+
+    if (this.pageParams.sortOrder === "ASC") {
+      sortASC.classList.add("active");
+      sortDESC.classList.remove("active");
+    } else if (this.pageParams.sortOrder === "DESC") {
+      sortDESC.classList.add("active");
+      sortASC.classList.remove("active");
+    }
   }
 
   getPageParams() {
     if (!localStorage.pageParams) {
       return {
         sortBy: "releaseDate",
+        sortOrder: "ASC",
         genre: [],
         platforms: [],
         years: [],
@@ -162,7 +175,7 @@ class ProductList {
       .querySelector(".filter-price .min-price")
       .addEventListener("change", (event) => {
         const value = parseInt(event.target.value, 10);
-        if(isNaN(value)) {
+        if (isNaN(value)) {
           this.pageParams.priceMin = 0;
         } else {
           this.pageParams.priceMin = value;
@@ -175,41 +188,101 @@ class ProductList {
       .querySelector(".filter-price .max-price")
       .addEventListener("change", (event) => {
         const value = parseInt(event.target.value, 10);
-        console.log(value, isNaN(value))
-        if(isNaN(value) || value === 0) {
-          this.pageParams.priceMax = parseInt(event.target.getAttribute('max'));
+        if (isNaN(value) || value === 0) {
+          this.pageParams.priceMax = parseInt(event.target.getAttribute("max"));
         } else {
           this.pageParams.priceMax = value;
         }
-        
+
         this.savePageParams();
         this.loadProducts();
       });
 
+    const sortOrderButtons = [
+      ...document.querySelectorAll(".sort-order-button"),
+    ];
+    sortOrderButtons.forEach((button) => {
+      button.addEventListener("click", (event) => {
+        const clickedButton = event.currentTarget;
+        if (clickedButton.matches(".active")) return;
+        sortOrderButtons.forEach((button) => button.classList.remove("active"));
+        clickedButton.classList.add("active");
+        this.pageParams.sortOrder =
+          clickedButton.getAttribute("data-sort-order");
+        this.savePageParams();
+        this.loadProducts();
+        console.log(clickedButton.getAttribute("data-sort-order"));
+      });
+    });
+
     document.querySelector(".clear-fitlers").addEventListener("click", () => {
       localStorage.removeItem("pageParams");
       this.pageParams = this.getPageParams();
-      this.renderFilters().then(()=>{
+      this.renderFilters().then(() => {
         this.loadProducts();
       });
-      
     });
   }
 
-  async loadProducts(){
+  async loadProducts() {
     const urlParams = new URLSearchParams(this.pageParams).toString();
-    const products = await (await fetch(`http://localhost:8000/load-products?${urlParams}`)).json();
+    const products = await (
+      await fetch(`http://localhost:8000/load-products?${urlParams}`)
+    ).json();
     const productsListBox = document.querySelector(".products__list-part");
     let productRow = ``;
     products.forEach((product) => {
-      productRow += `<img src="${product.gameCoverImage}">`;
+      productRow += this.renderProductRow(product);
     });
     productsListBox.innerHTML = productRow;
-    console.log(products)
+    console.log(products);
+  }
+
+  renderProductRow(product) {
+    const ratingBackgorundWidth = 100 - product.rating * 20;
+    const platfroms = product.platforms.join(",");
+    return `<div class="product-item">
+                    <div class="product-cover">
+                      <img src="${product.gameCoverImage}" class="product-cover-image">
+                      <div class="product-buttons">
+                        <button class="product-button edit-product">
+                          <img src="images/common/edit.svg">
+                        </button>
+                        <button class="product-button delete-product">
+                          <img src="images/common/delete.svg">
+                        </button>
+                      </div>
+                    </div>
+                    <div class="rating">
+                      <div class="stars">
+                        <svg viewBox="0 0 576 512" width="100" title="star">
+                          <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" />
+                        </svg><svg viewBox="0 0 576 512" width="100" title="star">
+                          <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" />
+                        </svg><svg viewBox="0 0 576 512" width="100" title="star">
+                          <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" />
+                        </svg><svg viewBox="0 0 576 512" width="100" title="star">
+                          <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" />
+                        </svg><svg viewBox="0 0 576 512" width="100" title="star">
+                          <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" />
+                        </svg>
+                        <div class="cover" style="width: ${ratingBackgorundWidth}%;"></div>
+                      </div>
+                      <div class="rating-number"><span class="rating-number-value">${product.rating}</span></div>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-title">${product.title}</h3>
+                      <p class="product-genre"><strong>Genre: </strong>${product.genre}</p>
+                      <p class="product-platforms"><strong>Platforms: </strong>${platfroms}</p>
+                      <p class="product-release-date"><strong>Release Date: </strong>${product.releaseDate}</p>
+                      <p class="product-description">${product.description}</p>
+                      <p class="product-price"><strong>Price: </strong>${product.price}$</p>
+                    </div>
+                </div>`;
   }
 
   initProductList() {
-    this.renderFilters().then(()=>{
+    this.renderFilters().then(() => {
       this.addEventsToFilters();
       this.loadProducts();
     });

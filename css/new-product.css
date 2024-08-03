@@ -1,0 +1,54 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("common.css");
+@import url("header.css");
+@import url("footer.css");
+
+
+.product-form-section{
+    padding: 100px 0;
+}
+
+.product-form {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.product-form .field-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.product-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form input[type="date"],
+.product-form input[type="file"],
+.product-form textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.product-form textarea {
+  resize: vertical;
+}
+
+.product-form input[type="radio"] {
+  margin-right: 10px;
+}
+
+.field-mult-wrapper{
+    display: grid;
+}
