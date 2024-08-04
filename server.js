@@ -5,7 +5,7 @@ import fs from "fs";
 import url from "url";
 import path from "path";
 
-const PORT = process.env.PORT;
+const PORT = 8000;
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
