@@ -886,34 +886,5 @@
     "description": "Uncharted: Legacy of Thieves Collection includes remastered versions of Uncharted 4: A Thief's End and Uncharted: The Lost Legacy. Players can experience the thrilling adventures of Nathan Drake and Chloe Frazer in stunning detail with enhanced graphics and gameplay.",
     "multiplayer": false,
     "rating": 4.8
-  },
-  {
-    "id": 54,
-    "title": "My New Game",
-    "genre": "RPG",
-    "price": 140,
-    "releaseDate": "31 August 2024",
-    "gameCoverImage": "images/products/my-new-game.png",
-    "platforms": [
-      "PC",
-      " PS4"
-    ],
-    "description": "Lorem ipsum",
-    "multiplayer": false,
-    "rating": 2.3
-  },
-  {
-    "id": 55,
-    "title": "Super Gsame 1",
-    "genre": "DolDol",
-    "price": 1111,
-    "releaseDate": "16 October 2025",
-    "gameCoverImage": "images/products/super-gsame-1.png",
-    "platforms": [
-      "PC"
-    ],
-    "description": "Lorem Ipsum",
-    "multiplayer": false,
-    "rating": 3
   }
 ]

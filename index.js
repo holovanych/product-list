@@ -226,6 +226,7 @@ class ProductList {
 
   async loadProducts() {
     const urlParams = new URLSearchParams(this.pageParams).toString();
+    console.log(`http://localhost:8000/load-products?${urlParams}`);
     const products = await (
       await fetch(`http://localhost:8000/load-products?${urlParams}`)
     ).json();
@@ -235,13 +236,13 @@ class ProductList {
       productRow += this.renderProductRow(product);
     });
     productsListBox.innerHTML = productRow;
-    console.log(products);
+    this.addEventToProductItemButton();
   }
 
   renderProductRow(product) {
     const ratingBackgorundWidth = 100 - product.rating * 20;
     const platfroms = product.platforms.join(",");
-    return `<div class="product-item">
+    return `<div class="product-item" data-id="${product.id}">
                     <div class="product-cover">
                       <img src="${product.gameCoverImage}" class="product-cover-image">
                       <div class="product-buttons">
@@ -279,6 +280,26 @@ class ProductList {
                       <p class="product-price"><strong>Price: </strong>${product.price}$</p>
                     </div>
                 </div>`;
+  }
+
+  addEventToProductItemButton() {
+    document
+      .querySelector(".products__list-part")
+      .addEventListener("click", (event) => {
+        if (event.target.closest(".edit-product")) {
+          const currentProduct = event.target.closest(".product-item");
+        } else if (event.target.closest(".delete-product")) {
+          const currentProduct = event.target.closest(".product-item");
+          this.deleteProduct(parseInt(currentProduct.dataset.id));
+        }
+      });
+  }
+
+  deleteProduct(id) {
+    fetch(`http://localhost:8000/delete-product?id=${id}`, {
+      method: "DELETE"
+    });
+    this.loadProducts()
   }
 
   initProductList() {

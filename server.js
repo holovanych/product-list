@@ -187,11 +187,32 @@ app.post("/add-product", upload.single("gameCoverImage"), (req, res) => {
       );
     }
   );
-  //res.setHeader("Content-Type", "text/html");
-  //res.end(`<h1>New Product ${req.body.title} Created!</h1>`);
 });
 
 app.listen(PORT, () => console.log("Listening"));
+
+
+app.delete('/delete-product', function (req, res) {
+  const id = parseInt(req.query.id);
+  fs.readFile( __dirname + "/api/" + "products.json", 'utf8', function (err, data) {
+     data = JSON.parse( data );
+     const productIndex = data.findIndex(product => product.id === id)
+     data.splice(productIndex, 1);
+     // Write the updated products array back to the JSON file
+     fs.writeFile(
+      __dirname + "/api/products.json",
+      JSON.stringify(data, null, 2),
+      () => {
+        res.setHeader("Content-Type", "application/json");
+        res.end(JSON.stringify({'deleted': 'success'}));
+      }
+    );
+  });
+})
+
+
+
+
 
 function formatDateString(dateString) {
   const date = new Date(dateString);
@@ -220,3 +241,4 @@ function formatDateString(dateString) {
 function stringToBoolean(str) {
   return str.toLowerCase() === "true";
 }
+
