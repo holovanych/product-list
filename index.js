@@ -211,7 +211,6 @@ class ProductList {
           clickedButton.getAttribute("data-sort-order");
         this.savePageParams();
         this.loadProducts();
-        console.log(clickedButton.getAttribute("data-sort-order"));
       });
     });
 
@@ -226,7 +225,6 @@ class ProductList {
 
   async loadProducts() {
     const urlParams = new URLSearchParams(this.pageParams).toString();
-    console.log(`http://localhost:8000/load-products?${urlParams}`);
     const products = await (
       await fetch(`http://localhost:8000/load-products?${urlParams}`)
     ).json();
@@ -241,14 +239,14 @@ class ProductList {
 
   renderProductRow(product) {
     const ratingBackgorundWidth = 100 - product.rating * 20;
-    const platfroms = product.platforms.join(",");
+    const platfroms = product.platforms.join(", ");
     return `<div class="product-item" data-id="${product.id}">
                     <div class="product-cover">
                       <img src="${product.gameCoverImage}" class="product-cover-image">
                       <div class="product-buttons">
-                        <button class="product-button edit-product">
+                        <a href="edit-product.html?id=${product.id}" class="product-button edit-product">
                           <img src="images/common/edit.svg">
-                        </button>
+                        </a>
                         <button class="product-button delete-product">
                           <img src="images/common/delete.svg">
                         </button>
@@ -312,3 +310,4 @@ class ProductList {
 
 const productList = new ProductList();
 productList.initProductList();
+

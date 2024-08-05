@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Product</title>
+    <title>Edit Product</title>
     <link href="css/new-product.css" rel="stylesheet" />
   </head>
   <body>
@@ -23,11 +23,14 @@
     </header>
 
     <main>
-      <section class="product-form-section add-product-section">
+      <section class="product-form-section edit-product-section">
         <div class="container">
-          <h1 class="page-title">Add New Product</h1>
+          <h1 class="page-title">Edit Product</h1>
+          <div class="cover-image-wrapper">
+            <img class="cover-image" src="">
+          </div> 
           <form
-            action="http://localhost:8000/add-product"
+            action="http://localhost:8000/edit-product"
             method="post"
             enctype="multipart/form-data"
             class="product-form add-product-form"
@@ -48,7 +51,7 @@
                 type="number"
                 id="price"
                 name="price"
-                step="0.1"
+                step="0.01"
                 required
               />
             </div>
@@ -65,7 +68,6 @@
                 id="gameCoverImage"
                 name="gameCoverImage"
                 accept="image/*"
-                required
               />
             </div>
 
@@ -129,6 +131,11 @@
               />
             </div>
 
+            <div class="field-item" style="visibility: hidden;height: 0;pointer-events: none;">
+              <label for="title">ID:</label>
+              <input type="number" id="product-id" name="productId" required />
+            </div>
+
             <div class="field-item">
               <input type="submit" value="Submit" class="button" />
             </div>
@@ -153,5 +160,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="edit-product.js"></script>
   </body>
 </html>

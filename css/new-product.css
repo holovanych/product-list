@@ -59,3 +59,22 @@
     text-align: center;
     margin-bottom: 30px;
 }
+
+.cover-item-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover-image-wrapper{
+  max-width: 300px;
+  margin: 50px auto;
+}
+
+.cover-image-field label{
+  display: inline-block;
+}
+
+textarea[name="description"]{
+  min-height: 150px;
+}

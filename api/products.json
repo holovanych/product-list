@@ -14,7 +14,7 @@
       "Xbox One",
       "Nintendo Switch"
     ],
-    "description": "Batman: Arkham Knight is the epic conclusion to the Arkham series. In this game, Batman faces the ultimate threat to the city he has sworn to protect. The Scarecrow returns and unites Gotham's most dangerous villains in a plan to destroy Batman. Players can explore Gotham City and utilize the Batmobile for the first time in the series. With an engaging story and action-packed gameplay, the game offers an immersive experience for fans of the Dark Knight.",
+    "description": "Batman: Arkham Knight is the epic conclusion to the Arkham series. In this game, Batman faces the ultimate threat to the city he has sworn to protect. The Scarecrow returns and unites Gotham's most dangerous villains in a plan to destroy Batman.",
     "multiplayer": false,
     "rating": 4.5
   },
@@ -87,7 +87,7 @@
       "Xbox One",
       "Nintendo Switch"
     ],
-    "description": "Dark Souls is a challenging action RPG known for its complex lore and unforgiving difficulty. Set in a dark, atmospheric world filled with hostile creatures, players must overcome numerous obstacles and powerful bosses. The game features deep character customization, a variety of weapons and magic, and a unique multiplayer system. Dark Souls is celebrated for its intricate level design and deep combat mechanics.",
+    "description": "Dark Souls is a challenging action RPG known for its complex lore and unforgiving difficulty. Set in a dark, atmospheric world filled with hostile creatures, players must overcome numerous obstacles and powerful bosses.",
     "multiplayer": true,
     "rating": 4.7
   },
@@ -127,19 +127,17 @@
     "id": 8,
     "title": "Elden Ring: Shadow of the Erdtree",
     "genre": "Action RPG",
-    "price": 49.99,
+    "price": 30.33,
     "releaseDate": "30 September 2024",
     "gameCoverImage": "images/products/elden-ring-shadow-erdtree.png",
     "platforms": [
       "PC",
       "PS5",
-      "PS4",
-      "Xbox Series",
-      "Xbox One"
+      "PS4"
     ],
     "description": "Elden Ring: Shadow of the Erdtree is an expansion for the critically acclaimed action RPG Elden Ring. Players explore new areas, face challenging enemies, and uncover more lore about the Lands Between. The expansion offers new quests, weapons, and spells, providing a fresh experience for fans of the base game. With a richly detailed world and deep gameplay mechanics, Elden Ring continues to captivate players.",
     "multiplayer": true,
-    "rating": 4.8
+    "rating": 3.2
   },
   {
     "id": 9,
@@ -237,7 +235,7 @@
       "PS5",
       "PS4"
     ],
-    "description": "God of War is an action-adventure game that follows the journey of Kratos and his son Atreus. Set in the world of Norse mythology, the game features a deep and emotional story, stunning visuals, and intense combat. Players explore vast landscapes, solve puzzles, and battle mythological creatures. With its compelling narrative and immersive gameplay, God of War is a standout title in the action-adventure genre.",
+    "description": "God of War is an action-adventure game that follows the journey of Kratos and his son Atreus. Set in the world of Norse mythology, the game features a deep and emotional story, stunning visuals, and intense combat. Players explore vast landscapes, solve puzzles, and battle mythological creatures.",
     "multiplayer": false,
     "rating": 4.9
   },
@@ -565,7 +563,7 @@
     ],
     "description": "Ratchet & Clank is a reimagining of the original game that combines the best elements of the series with stunning visuals and a captivating story. Players join Ratchet and Clank on their quest to save the galaxy, using a wide range of gadgets and weapons.",
     "multiplayer": false,
-    "rating": 4.6
+    "rating": 2.5
   },
   {
     "id": 34,
@@ -684,8 +682,8 @@
   {
     "id": 41,
     "title": "Marvel's Spider-Man 2",
-    "genre": "Action-Adventure",
-    "price": 69.99,
+    "genre": "Action",
+    "price": 59.99,
     "releaseDate": "20 October 2023",
     "gameCoverImage": "images/products/spider-man-2.png",
     "platforms": [
@@ -713,17 +711,18 @@
   },
   {
     "id": 43,
-    "title": "Stellar Blade",
-    "genre": "Action RPG",
-    "price": 59.99,
-    "releaseDate": "8 February 2024",
+    "title": "Stellar Blade 2",
+    "genre": "RPG",
+    "price": 48.5,
+    "releaseDate": "1 February 2023",
     "gameCoverImage": "images/products/stellar-blade.png",
     "platforms": [
-      "PS5"
+      "PS5",
+      "Nintendo"
     ],
-    "description": "Stellar Blade is an action RPG set in a futuristic world where players take on the role of Eve, a warrior tasked with saving humanity from an alien invasion. The game features fast-paced combat, a rich narrative, and a detailed sci-fi environment. Players can customize their character, upgrade abilities, and explore a vast world.",
+    "description": "Stellar Blade is an action RPG set in a futuristic world where players take on the role of Eve, a warrior tasked with saving humanity from an alien invasion. The game features fast-paced combat, a rich narrative, and a detailed sci-fi environment.",
     "multiplayer": false,
-    "rating": 4.5
+    "rating": 3.8
   },
   {
     "id": 44,

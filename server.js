@@ -17,6 +17,21 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
+app.get("/product-by-id", (req, res) => {
+  const id = parseInt(req.query.id);
+  fs.readFile(
+    __dirname + "/api/" + "products.json",
+    "utf8",
+    function (err, data) {
+      const products = JSON.parse(data);
+      const findedProduct = products.find((product) => product.id === id);
+
+      res.setHeader("Content-Type", "application/json");
+      res.end(JSON.stringify(findedProduct));
+    }
+  );
+});
+
 app.get("/product-filters", (req, res) => {
   fs.readFile(
     __dirname + "/api/" + "products.json",
@@ -161,19 +176,18 @@ app.post("/add-product", upload.single("gameCoverImage"), (req, res) => {
     function (err, data) {
       data = JSON.parse(data);
       const newProduct = {
-        id: data.length + 1,
+        id: generateUniqueId(),
         title: req.body.title,
         genre: req.body.genre,
         price: parseFloat(req.body.price),
         releaseDate: formatDateString(req.body.releaseDate),
         gameCoverImage: req.file.path.replace(/\\/g, "/"),
-        platforms: req.body.platforms.split(","),
+        platforms: req.body.platforms.split(",").map(platform => platform.trim()),
         description: req.body.description,
         multiplayer: stringToBoolean(req.body.multiplayer),
         rating: parseFloat(req.body.rating),
       };
       data.push(newProduct);
-      // Write the updated products array back to the JSON file
       fs.writeFile(
         __dirname + "/api/products.json",
         JSON.stringify(data, null, 2),
@@ -182,7 +196,76 @@ app.post("/add-product", upload.single("gameCoverImage"), (req, res) => {
             return res.status(500).send("Error writing products file.");
           }
           res.setHeader("Content-Type", "text/html");
-          res.end(`<h1>New Product ${req.body.title} Created!</h1>`);
+          res.end(`<h1>New Product ${req.body.title} Created!</h1> <a href="${req.headers.origin}">Back To home Page</a>`);
+        }
+      );
+    }
+  );
+});
+
+/* EDIT PRODUCT */
+
+app.post("/edit-product", upload.single("gameCoverImage"), (req, res) => {
+  fs.readFile(
+    __dirname + "/api/" + "products.json",
+    "utf8",
+    function (err, data) {
+      const productId = parseInt(req.body.productId);
+      data = JSON.parse(data);
+      const findedProductIndex = data.findIndex((product) => {
+        return product.id === productId;
+      });
+      const editedProduct = {
+        id: productId,
+        title: req.body.title,
+        genre: req.body.genre,
+        price: parseFloat(req.body.price),
+        releaseDate: formatDateString(req.body.releaseDate),
+        gameCoverImage: req.file
+          ? req.file.path.replace(/\\/g, "/")
+          : data[findedProductIndex].gameCoverImage,
+        platforms: req.body.platforms.split(",").map(platform => platform.trim()),
+        description: req.body.description,
+        multiplayer: stringToBoolean(req.body.multiplayer),
+        rating: parseFloat(req.body.rating),
+      };
+
+      data.splice(findedProductIndex, 1, editedProduct);
+
+      fs.writeFile(
+        __dirname + "/api/products.json",
+        JSON.stringify(data, null, 2),
+        (err) => {
+          if (err) {
+            return res.status(500).send("Error writing products file.");
+          }
+
+           res.setHeader("Content-Type", "text/html");
+           res.end(`<h1>Product ${req.body.title} Edited !</h1> <a href="${req.headers.origin}">Back To home Page</a>`);
+        }
+      );
+    }
+  );
+});
+
+/*  END EDIT PRODUCT */
+
+app.delete("/delete-product", function (req, res) {
+  const id = parseInt(req.query.id);
+  fs.readFile(
+    __dirname + "/api/" + "products.json",
+    "utf8",
+    function (err, data) {
+      data = JSON.parse(data);
+      const productIndex = data.findIndex((product) => product.id === id);
+      data.splice(productIndex, 1);
+      // Write the updated products array back to the JSON file
+      fs.writeFile(
+        __dirname + "/api/products.json",
+        JSON.stringify(data, null, 2),
+        () => {
+          res.setHeader("Content-Type", "application/json");
+          res.end(JSON.stringify({ deleted: "success" }));
         }
       );
     }
@@ -190,29 +273,6 @@ app.post("/add-product", upload.single("gameCoverImage"), (req, res) => {
 });
 
 app.listen(PORT, () => console.log("Listening"));
-
-
-app.delete('/delete-product', function (req, res) {
-  const id = parseInt(req.query.id);
-  fs.readFile( __dirname + "/api/" + "products.json", 'utf8', function (err, data) {
-     data = JSON.parse( data );
-     const productIndex = data.findIndex(product => product.id === id)
-     data.splice(productIndex, 1);
-     // Write the updated products array back to the JSON file
-     fs.writeFile(
-      __dirname + "/api/products.json",
-      JSON.stringify(data, null, 2),
-      () => {
-        res.setHeader("Content-Type", "application/json");
-        res.end(JSON.stringify({'deleted': 'success'}));
-      }
-    );
-  });
-})
-
-
-
-
 
 function formatDateString(dateString) {
   const date = new Date(dateString);
@@ -242,3 +302,6 @@ function stringToBoolean(str) {
   return str.toLowerCase() === "true";
 }
 
+function generateUniqueId() {
+  return Math.floor(Math.random() * 1000000000000);
+}
